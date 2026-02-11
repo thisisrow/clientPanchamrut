@@ -13,6 +13,8 @@ export default function ProductCard({
   product,
   showActions = true,
 }: ProductCardProps) {
+  const imageSrc = product.image?.trim() || "/logo.png";
+
   return (
     <div className="group overflow-hidden rounded-3xl border border-[#e2e8f0] bg-[#ffffff] shadow-[0_24px_60px_-40px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-40px_rgba(15,23,42,0.45)]">
       <div className="relative h-56 overflow-hidden">
@@ -20,7 +22,7 @@ export default function ProductCard({
           <img
             alt={product.name}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            src={product.image}
+            src={imageSrc}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/60 via-[#0f172a]/20 to-transparent" />
           <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[#0f172a] shadow">
