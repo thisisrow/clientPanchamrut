@@ -17,7 +17,7 @@ export default async function dbConnect() {
   if (cached.conn) {
     return cached.conn;
   }
-
+console.log("env",process.env.MONGODB_URI);
   const uri = process.env.MONGODB_URI;
   if (!uri) {
     throw new Error("MONGODB_URI is not defined");
@@ -26,6 +26,7 @@ export default async function dbConnect() {
   if (!cached.promise) {
     cached.promise = mongoose.connect(uri, {
       bufferCommands: false,
+      serverSelectionTimeoutMS: 5000,
     });
   }
 
