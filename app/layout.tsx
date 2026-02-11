@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import QuotePopup from "@/components/forms/QuotePopup";
 import LearnMorePopup from "@/components/forms/LearnMorePopup";
+import FloatingContact from "@/components/FloatingContact";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         <QuotePopup />
         <LearnMorePopup />
         <BackToTop />
+        <FloatingContact />
       </body>
     </html>
   );
