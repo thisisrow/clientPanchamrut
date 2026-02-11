@@ -67,7 +67,7 @@ export default async function CategoryListing() {
                 <div className="relative h-56 overflow-hidden">
                   <Link href={`/products?category=${category.slug}`}>
                     <img
-                      src={category.image}
+                      src={category.image?.trim() || "/logo.png"}
                       alt={category.name}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />

@@ -33,12 +33,11 @@ export const supportPhoneDisplay = "+91 98707 95121";
 export const supportPhoneLink = "+919870795121";
 
 const envUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || "";
-const baseUrl = envUrl
-  ? envUrl.startsWith("http")
-    ? envUrl
-    : `https://${envUrl}`
-  : "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  process.env.VERCEL_URL ||
+  "https://client-panchamrut.vercel.app";
+
+const baseUrl = envUrl.startsWith("http") ? envUrl : `https://${envUrl}`;
 
 async function fetchJson<T>(path: string, tags: string[] = []) {
   const url = new URL(path, baseUrl).toString();
