@@ -105,7 +105,7 @@ export default function InquiryForm({
   return (
     <form className={className} onSubmit={handleSubmit}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-2">
+        <div data-aos="fade-right" className="space-y-2">
           <label className="text-base font-semibold text-slate-700">
             Full Name
           </label>
@@ -118,7 +118,7 @@ export default function InquiryForm({
             onChange={onChange("fullName")}
           />
         </div>
-        <div className="space-y-2">
+        <div data-aos="fade-right" className="space-y-2">
           <label className="text-base font-semibold text-slate-700">
             Email Address
           </label>
@@ -132,7 +132,7 @@ export default function InquiryForm({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <label className="text-base font-semibold text-slate-700">
             Phone Number
@@ -160,7 +160,7 @@ export default function InquiryForm({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <label className="text-base font-semibold text-slate-700">
             Product Name
@@ -187,7 +187,7 @@ export default function InquiryForm({
         </div>
       </div>
 
-      <div className="space-y-2">
+      <div data-aos="fade-right" className="space-y-2">
         <label className="text-base font-semibold text-slate-700">
           Message
         </label>
@@ -201,15 +201,16 @@ export default function InquiryForm({
       </div>
 
       {status === "error" ? (
-        <p className="text-base text-red-600">{error}</p>
+        <p data-aos="zoom-in" className="text-base text-red-600">{error}</p>
       ) : null}
       {status === "success" ? (
-        <p className="text-base text-emerald-600">
+        <p data-aos="zoom-in" className="text-base text-emerald-600">
           Thanks! We will get back to you shortly.
         </p>
       ) : null}
 
       <button
+      data-aos="zoom-in"
         className="w-full bg-[#15803d] hover:bg-[#166534] text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-[#15803d]/20 disabled:opacity-70"
         type="submit"
         disabled={status === "loading"}

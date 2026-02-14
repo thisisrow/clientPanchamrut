@@ -46,7 +46,7 @@ export default function LearnMorePopup() {
           >
             <span className="material-symbols-outlined text-base">close</span>
           </button>
-          <div className="mb-4">
+          <div data-aos="fade-right" className="mb-4">
             <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
               Learn More
             </p>

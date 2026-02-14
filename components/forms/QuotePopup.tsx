@@ -72,6 +72,7 @@ export default function QuotePopup() {
         <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-5 sm:p-8 shadow-2xl">
 
           <button
+            data-aos="zoom-in"
             type="button"
             className="absolute right-3 top-3 w-9 h-9 flex items-center justify-center rounded-full bg-[#15803d] text-white shadow-md"
             onClick={closePopup}
@@ -80,7 +81,7 @@ export default function QuotePopup() {
             <span className="material-symbols-outlined text-sm">close</span>
           </button>
 
-          <div className="mb-4 pr-8">
+          <div data-aos="fade-right" className="mb-4 pr-8">
             <p className="text-xs uppercase tracking-[0.3em] text-[#16a34a] hidden md:block">
               Get a Quote
             </p>
