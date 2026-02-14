@@ -8,6 +8,7 @@ import SubFooter from "@/components/SubFooter";
 import BackToTop from "@/components/BackToTop";
 import QuotePopup from "@/components/forms/QuotePopup";
 import LearnMorePopup from "@/components/forms/LearnMorePopup";
+import { AosProvider } from "@/components/AosProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -79,13 +80,15 @@ export default function RootLayout({
         className={`${inter.variable} ${outfit.variable} bg-background-light text-default transition-colors duration-300`}
         suppressHydrationWarning
       >
-        <Header />
-        {children}
-        <Footer />
-        <SubFooter/>
-        <QuotePopup />
-        <LearnMorePopup />
-        <BackToTop />
+        <AosProvider>
+          <Header />
+          <div className="pt-24">{children}</div>
+          <Footer />
+          <SubFooter />
+          <QuotePopup />
+          <LearnMorePopup />
+          <BackToTop />
+        </AosProvider>
       </body>
     </html>
   );

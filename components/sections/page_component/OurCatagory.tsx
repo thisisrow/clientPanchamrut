@@ -19,7 +19,7 @@ export default async function OurCatagory() {
 
   return (
     <section className="md:py-24 bg-white" id="categories">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div data-aos="zoom-in-up" className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
             <span className="text-[#15803d] font-bold tracking-widest uppercase text-base mb-4 block">

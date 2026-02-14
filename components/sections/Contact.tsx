@@ -13,7 +13,7 @@ export default function Contact() {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div data-aos="zoom-in" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-[#0f172a] mb-6">
             Contact <span className="text-[#15803d]">Us</span>
           </h1>
@@ -27,7 +27,7 @@ export default function Contact() {
       <main className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-7">
-            <div className="bg-[#ffffff] rounded-brand p-8 md:p-10 shadow-soft border border-[#e2e8f0]">
+            <div data-aos="fade-right" className="bg-[#ffffff] rounded-brand p-8 md:p-10 shadow-soft border border-[#e2e8f0]">
               <h2 className="text-3xl text-[#0f172a] mb-2">Send an Inquiry</h2>
               <p className="text-[#475569] mb-8">
                 Our specialized team will respond to your request within 24
@@ -43,7 +43,7 @@ export default function Contact() {
           </div>
 
           <div className="lg:col-span-5 space-y-10">
-            <div className="space-y-8">
+            <div data-aos="fade-left" className="space-y-8">
               <h2 className="text-3xl text-[#0f172a]">Office Information</h2>
 
               <div className="flex gap-5 group">
@@ -124,7 +124,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="rounded-brand overflow-hidden border border-[#e2e8f0] shadow-soft h-[300px]">
+            <div data-aos="flip-left" className="rounded-brand overflow-hidden border border-[#e2e8f0] shadow-soft h-[300px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.4843385743443!2d72.8414205!3d19.216943000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b12ba53dd4fd%3A0xb0366b88a18a8765!2sPANCHAMRUT%20CHEMICALS!5e1!3m2!1sen!2sin!4v1770194382905!5m2!1sen!2sin"
                 className="w-full h-full border-0"

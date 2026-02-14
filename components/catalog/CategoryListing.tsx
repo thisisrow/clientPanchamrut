@@ -22,7 +22,10 @@ export default async function CategoryListing() {
         <div className="absolute -top-32 -right-16 h-72 w-72 rounded-full bg-[#15803d]/10 blur-3xl" />
         <div className="absolute -bottom-24 -left-10 h-64 w-64 rounded-full bg-[#16a34a]/10 blur-3xl" />
 
-        <div className="container mx-auto px-4 lg:px-8 py-20">
+        <div
+          data-aos="fade-right"
+          className="container mx-auto px-4 lg:px-8 py-20"
+        >
           <div className="max-w-3xl">
             <span className="text-[#16a34a] font-bold tracking-[0.35em] uppercase text-xs">
               Product Catalog
@@ -49,7 +52,6 @@ export default async function CategoryListing() {
               <span className="rounded-full border border-[#e2e8f0] bg-white px-4 py-2 text-base font-semibold text-[#475569]">
                 Mumbai Distribution Hub
               </span>
-              
             </div>
           </div>
         </div>
@@ -61,6 +63,7 @@ export default async function CategoryListing() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {sortedCategories.map((category) => (
               <div
+                data-aos="zoom-in-up"
                 key={category.id || category.slug}
                 className="group overflow-hidden rounded-3xl border border-[#e2e8f0] bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_-40px_rgba(15,23,42,0.45)]"
               >

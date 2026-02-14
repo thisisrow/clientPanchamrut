@@ -12,7 +12,7 @@ export default function RelatedProducts({
 }: RelatedProductsProps) {
   return (
     <div className="space-y-8">
-      <div>
+      <div data-aos="fade-right">
         <span className="text-xs uppercase tracking-[0.35em] text-[#166534]">
           Similar Products
         </span>

@@ -10,7 +10,11 @@ export default async function Formcta() {
         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-[3rem] p-5 lg:p-16 text-white relative overflow-hidden shadow-2xl">
           <div className="flex flex-col lg:flex-row gap-12 relative z-10">
             {/* LEFT SIDE */}
-            <div className="lg:w-1/2">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="900"
+              className="lg:w-1/2"
+            >
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold mb-6 pt-4 text-center sm:pt-4 sm:text-center md:pt-0 md:text-left">
                 Need a Custom Quote?
               </h2>
@@ -22,7 +26,12 @@ export default async function Formcta() {
 
               <div className="space-y-3 md:space-y-6">
                 {/* Phone Card */}
-                <div className="bg-white/10 backdrop-blur-md border-l-4 border-[#15803d] rounded-2xl p-5 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  className="bg-white/10 backdrop-blur-md border-l-4 border-[#15803d] rounded-2xl p-5 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                >
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-[#15803d] text-white shadow-md">
                       <span className="material-symbols-outlined text-lg md:text-2xl">
@@ -46,7 +55,12 @@ export default async function Formcta() {
                 </div>
 
                 {/* Email Card */}
-                <div className="bg-white/10 backdrop-blur-md border-l-4 border-[#15803d] rounded-2xl p-5 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  className="bg-white/10 backdrop-blur-md border-l-4 border-[#15803d] rounded-2xl p-5 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                >
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-[#15803d] text-white shadow-md">
                       <span className="material-symbols-outlined text-lg md:text-2xl">
@@ -78,7 +92,11 @@ export default async function Formcta() {
             </div>
 
             {/* RIGHT SIDE FORM */}
-            <div className="lg:w-1/2 ">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="900"
+              className="lg:w-1/2 "
+            >
               <InquiryForm
                 source="home"
                 submitLabel="Send Inquiry"

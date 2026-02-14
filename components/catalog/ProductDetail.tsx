@@ -47,7 +47,7 @@ export default function ProductDetail({
     <main className="bg-[#f8fafc]">
       <section className="py-14">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 text-base text-[#94a3b8]">
+          <div data-aos="fade-right" className="flex flex-wrap items-center gap-2 text-base text-[#94a3b8]">
             <Link href="/products" className="hover:text-[#15803d]">
               Products
             </Link>
@@ -140,8 +140,8 @@ export default function ProductDetail({
               </div>
             </div>
 
-            <div className="space-y-6">
-              <div
+            <div  className="space-y-6">
+              <div data-aos="fade-right"
                 className={`inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs font-semibold ${stockBadgeClass}`}
               >
                 <span className="material-symbols-outlined text-base">
@@ -151,12 +151,12 @@ export default function ProductDetail({
               </div>
 
               <div>
-                <h1 className="text-4xl font-display font-bold text-[#0f172a]">
+                <h1 data-aos="fade-right" className="text-4xl font-display font-bold text-[#0f172a]">
                   {product.name}
                 </h1>
 
-                <div className="mt-3 flex flex-wrap items-center gap-4">
-                  <span className="text-3xl font-bold text-[#15803d]">
+                <div data-aos="fade-right" className="mt-3 flex flex-wrap items-center gap-4">
+                  <span  className="text-3xl font-bold text-[#15803d]">
                     {formatPrice(product)}
                   </span>
 
@@ -168,18 +168,18 @@ export default function ProductDetail({
                   </button>
                 </div>
 
-                <p className="mt-4 text-base leading-relaxed text-[#475569]">
+                <p data-aos="fade-right" className="mt-4 text-base leading-relaxed text-[#475569]">
                   {product.description}
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-4 rounded-2xl border border-[#e2e8f0] bg-white p-5 sm:grid-cols-2">
+              <div  className="grid grid-cols-1 gap-4 rounded-2xl border border-[#e2e8f0] bg-white p-5 sm:grid-cols-2">
                 {product.attributes.map((attribute) => (
                   <div key={attribute.label} className="space-y-1">
-                    <p className="text-xs uppercase tracking-[0.2em] text-[#16a34a]">
+                    <p data-aos="fade-right" className="text-xs uppercase tracking-[0.2em] text-[#16a34a]">
                       {attribute.label}
                     </p>
-                    <p className="text-base font-semibold text-[#0f172a]">
+                    <p data-aos="fade-right" className="text-base font-semibold text-[#0f172a]">
                       {attribute.value}
                     </p>
                   </div>
@@ -194,7 +194,7 @@ export default function ProductDetail({
                   Get Quote
                 </button>
 
-                <a
+                <a 
                   href={`tel:${supportPhoneLink}`}
                   className="inline-flex items-center justify-center rounded-full border border-[#e2e8f0] bg-white px-6 py-3 text-base font-semibold text-[#475569] transition-colors hover:border-[#15803d] hover:text-[#15803d]"
                 >
@@ -215,7 +215,7 @@ export default function ProductDetail({
                   "Fast Delivery",
                   "Quality Documentation",
                 ].map((label) => (
-                  <div
+                  <div data-aos="zoom-in-up"
                     key={label}
                     className="flex items-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-4 py-2"
                   >

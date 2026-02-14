@@ -1,4 +1,15 @@
 export default function Product() {
+  const profileData = [
+    { label: "Legal Name", value: "Panchamrut Chemicals Pvt. Ltd." },
+    { label: "Nature of Business", value: "Importer, Trader & Supplier" },
+    {
+      label: "HQ Location",
+      value: "Borivali West, Mumbai, Maharashtra, India",
+    },
+    { label: "GST Registration", value: "27AHDPD1848D1ZR" },
+    { label: "Total Workforce", value: "26 to 50 People" },
+    { label: "Year of Establishment", value: "2004" },
+  ];
   return (
     <main>
       <section className="relative py-20 min-h-[50vh] overflow-hidden flex items-center justify-center">
@@ -10,7 +21,10 @@ export default function Product() {
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div
+          data-aos="zoom-in"
+          className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        >
           <h1 className="text-4xl md:text-6xl font-extrabold text-[#0f172a] mb-6">
             Redefining the Future of{" "}
             <span className="text-[#15803d]">Chemical Solutions</span>
@@ -26,7 +40,7 @@ export default function Product() {
       <section className="py-20 bg-[#ffffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+            <div data-aos="fade-right" className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6 text-[#0f172a] flex items-center">
                 <span className="w-10 h-1 bg-[#15803d] mr-4"></span>
                 Who We Are
@@ -57,7 +71,7 @@ export default function Product() {
               </div>
             </div>
 
-            <div className="order-1 md:order-2">
+            <div data-aos="fade-left" className="order-1 md:order-2">
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#22c55e]/10 rounded-full blur-2xl"></div>
 
@@ -67,7 +81,12 @@ export default function Product() {
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIXOSNH2LYQnGuH6zil3yFAANqZOyKdzJv1UDIAHNGd2mVFRHMYqtJIyYnLmEJZ2I3qat_pVmeAbp1XWjdu0EUAxT-h4MVqmttvlEMIo-Sbr2VHnjDWKEwKn23sc0auTaTeU16YGV-ATNYi6y6Rxv665FCSiW1aljKmxlwZg6W7JwPfMZHBNfbf0Fep4TRKfBjL-YjwrrL5kcThmmMvWPDNky3qhAv91uL6OJQ1OyZTbFxZj_88pgHYZxX37WEMoZb3LD4pgydaAo"
                 />
 
-                <div className="absolute -bottom-6 -right-6 bg-[#15803d] text-[#ffffff] p-6 rounded-2xl shadow-xl z-20 hidden lg:block">
+                <div
+                  data-aos="flip-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  className="absolute -bottom-6 -right-6 bg-[#15803d] text-[#ffffff] p-6 rounded-2xl shadow-xl z-20 hidden lg:block"
+                >
                   <p className="text-3xl font-bold">20+</p>
                   <p className="text-base opacity-90">Years Experience</p>
                 </div>
@@ -78,7 +97,7 @@ export default function Product() {
       </section>
 
       <section className="py-16 bg-[#15803d]">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div data-aos="fade-up" className="max-w-4xl mx-auto px-4 text-center">
           <span className="material-symbols-outlined text-[#ffffff]/40 text-6xl mb-4">
             format_quote
           </span>
@@ -98,7 +117,7 @@ export default function Product() {
 
       <section className="py-20 bg-[#f8fafc]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div data-aos="fade-up" className="text-center mb-16">
             <h2 className="text-3xl font-bold text-[#0f172a]">
               Why Choose Us?
             </h2>
@@ -106,7 +125,10 @@ export default function Product() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]">
+            <div
+              data-aos="fade-up"
+              className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]"
+            >
               <div className="w-14 h-14 bg-[#22c55e]/10 rounded-xl flex items-center justify-center mb-6">
                 <span className="material-symbols-outlined text-[#15803d]">
                   verified_user
@@ -121,7 +143,10 @@ export default function Product() {
               </p>
             </div>
 
-            <div className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]">
+            <div
+              data-aos="fade-up"
+              className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]"
+            >
               <div className="w-14 h-14 bg-[#22c55e]/10 rounded-xl flex items-center justify-center mb-6">
                 <span className="material-symbols-outlined text-[#15803d]">
                   inventory_2
@@ -136,7 +161,10 @@ export default function Product() {
               </p>
             </div>
 
-            <div className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]">
+            <div
+              data-aos="fade-up"
+              className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]"
+            >
               <div className="w-14 h-14 bg-[#22c55e]/10 rounded-xl flex items-center justify-center mb-6">
                 <span className="material-symbols-outlined text-[#15803d]">
                   local_shipping
@@ -151,7 +179,10 @@ export default function Product() {
               </p>
             </div>
 
-            <div className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]">
+            <div
+              data-aos="fade-up"
+              className="bg-[#ffffff] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-[#e2e8f0]"
+            >
               <div className="w-14 h-14 bg-[#22c55e]/10 rounded-xl flex items-center justify-center mb-6">
                 <span className="material-symbols-outlined text-[#15803d]">
                   high_quality
@@ -171,59 +202,32 @@ export default function Product() {
 
       <section className="py-20 bg-[#ffffff]">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-8 text-center text-[#0f172a]">
+          <h2
+            data-aos="fade-up"
+            className="text-2xl font-bold mb-8 text-center text-[#0f172a]"
+          >
             Corporate Profile
           </h2>
 
           <div className="overflow-hidden rounded-xl border border-[#e2e8f0] shadow-sm">
             <table className="min-w-full divide-y divide-[#e2e8f0]">
               <tbody className="bg-[#ffffff] divide-y divide-[#e2e8f0]">
-                <tr>
-                  <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
-                    Legal Name
-                  </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">
-                    Panchamrut Chemicals Pvt. Ltd.
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
-                    Nature of Business
-                  </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">
-                    Importer, Trader &amp; Supplier
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
-                    HQ Location
-                  </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">
-                    Borivali West, Mumbai, Maharashtra, India
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
-                    GST Registration
-                  </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">
-                    27AHDPD1848D1ZR
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
-                    Total Workforce
-                  </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">
-                    26 to 50 People
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
-                    Year of Establishment
-                  </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">2004</td>
-                </tr>
+                {profileData.map((item, index) => (
+                  <tr key={index}>
+                    <td
+                      data-aos="fade-right"
+                      className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569] w-1/3"
+                    >
+                      {item.label}
+                    </td>
+                    <td
+                      data-aos="fade-right"
+                      className="px-6 py-4 text-base text-[#475569]"
+                    >
+                      {item.value}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

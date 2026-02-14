@@ -23,7 +23,7 @@ export default async function ProductsCatalog({
     <main className="bg-[#f8fafc]">
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col gap-4">
+          <div data-aos="fade-right" className="flex flex-col gap-4">
             <Link
               href="/catagory"
               className="inline-flex items-center gap-2 text-base font-semibold text-[#15803d] hover:text-[#166534]"

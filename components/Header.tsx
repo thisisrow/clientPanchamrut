@@ -57,10 +57,10 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             <Image src="/logo.png" alt="Logo" width={40} height={40} />
             <div className="hidden sm:block leading-tight">
-              <span className="block font-bold text-[#15803d] uppercase">
+              <span className="block font-bold text-[#15803d] uppercase text-lg md:text-xl lg:text-2xl">
                 Panchamrut
               </span>
-              <span className="text-xs text-slate-500 uppercase tracking-widest">
+              <span className="text-xs text-slate-500 uppercase tracking-widest text-base md:text-lg ">
                 Chemicals
               </span>
             </div>
@@ -74,7 +74,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="relative group py-2 text-sm font-semibold text-slate-600 hover:text-[#15803d] transition-colors"
+                  className="relative group py-2 text-base md:text-xl font-semibold text-slate-600 hover:text-[#15803d] transition-colors"
                 >
                   {item.label}
                   {/* Animated Underline */}
@@ -90,7 +90,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <Link
               href="/contact"
-              className="hidden md:block bg-[#15803d] text-white px-6 py-2 rounded-full font-medium hover:bg-[#16a34a] transform hover:scale-105 transition-all active:scale-95"
+              className="hidden md:block bg-[#15803d] text-base md:text-xl text-white px-6 py-2 rounded-full font-medium hover:bg-[#16a34a] transform hover:scale-105 transition-all active:scale-95"
             >
               Enquire Now
             </Link>

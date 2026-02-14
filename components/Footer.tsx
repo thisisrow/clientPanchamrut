@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="">
+              <div className="" data-aos="fade-up">
                 <Image
                   src="/logo.png"
                   alt="Panchamrut logo"
@@ -16,15 +16,18 @@ export default function Footer() {
                   className="h-11 w-11"
                 />
               </div>
-              <h1 className="font-display font-bold text-lg tracking-tight text-[#15803d] leading-none uppercase">
+              <h1
+                data-aos="fade-up"
+                className="font-display font-bold text-lg tracking-tight text-[#15803d] leading-none uppercase"
+              >
                 Panchamrut
               </h1>
             </div>
-            <p className="text-slate-500">
+            <p data-aos="fade-up" className="text-slate-500">
               A dedicated chemical trading house since 2004, providing reliable
               supply chain solutions for industries worldwide.
             </p>
-            <div className="flex gap-4">
+            <div data-aos="zoom-in" className="flex gap-4">
               <a
                 className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-[#15803d] hover:text-white transition-all"
                 href="#"
@@ -44,8 +47,10 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-6">Product Categories</h3>
-            <ul className="space-y-4">
+            <h3 data-aos="fade-up" className="font-bold text-lg mb-6">
+              Product Categories
+            </h3>
+            <ul data-aos="fade-up" className="space-y-4">
               <li>
                 <a
                   className="text-slate-500 hover:text-[#15803d] transition-colors"
@@ -81,8 +86,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-4">
+            <h3 data-aos="fade-up" className="font-bold text-lg mb-6">
+              Quick Links
+            </h3>
+            <ul data-aos="fade-up" className="space-y-4">
               <li>
                 <a
                   className="text-slate-500 hover:text-[#15803d] transition-colors"
@@ -118,8 +125,13 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-6">Head Office</h3>
-            <address className="not-italic text-slate-500 space-y-4">
+            <h3 data-aos="fade-up" className="font-bold text-lg mb-6">
+              Head Office
+            </h3>
+            <address
+              data-aos="fade-up"
+              className="not-italic text-slate-500 space-y-4"
+            >
               <div className="flex gap-3">
                 <span className="material-symbols-outlined text-[#15803d]">
                   location_on

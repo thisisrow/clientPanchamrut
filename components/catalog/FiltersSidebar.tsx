@@ -56,7 +56,7 @@ export default function FiltersSidebar({ products }: FiltersSidebarProps) {
 
   const content = (
     <>
-      <div className="flex items-start justify-between gap-4">
+      <div  className="flex items-start justify-between gap-4">
         <div>
           <p className="text-lg font-bold text-[#0f172a]">Filters</p>
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#94a3b8]">
@@ -113,7 +113,7 @@ export default function FiltersSidebar({ products }: FiltersSidebarProps) {
     </>
   );
   return (
-    <div>
+    <div data-aos="fade-right">
       <div className="md:hidden fixed top-24 left-0 right-0 z-40 px-4 justify-self-end">
         <button
           type="button"
