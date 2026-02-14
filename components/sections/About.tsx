@@ -34,16 +34,25 @@ export default function Product() {
 
               <div className="space-y-4 text-[#475569] text-lg leading-relaxed">
                 <p>
-                  Founded in Mumbai, <strong>Panchamrut Chemicals</strong> has
-                  emerged as a trusted name in the chemical trading industry.
+                  <strong>Panchamrut Chemicals</strong> is a Mumbai-based
+                  trading and supply company specializing in industrial,
+                  pharmaceutical, and specialty chemicals. Established in 2004,
+                  we have built a strong reputation for reliability, quality,
+                  and competitive pricing in the chemical supply industry.
                 </p>
                 <p>
-                  With over a decade of experience, we have built a robust
-                  supply chain that ensures quality and competitive pricing.
+                  Our company operates from <strong>Mumbai</strong>,
+                  Maharashtra, strategically located to serve manufacturers and
+                  industrial clients across India. We maintain a comprehensive
+                  inventory of chemical products and have established strong
+                  relationships with reputed manufacturers and suppliers.
                 </p>
                 <p>
-                  We pride ourselves on transparency, technical expertise, and
-                  consistent delivery.
+                  As a trader and supplier, we understand the critical
+                  importance of consistent quality and timely delivery for our
+                  clients' operations. Our team brings decades of combined
+                  experience in the chemical industry, enabling us to provide
+                  expert guidance and support for your chemical requirements.
                 </p>
               </div>
             </div>
@@ -59,7 +68,7 @@ export default function Product() {
                 />
 
                 <div className="absolute -bottom-6 -right-6 bg-[#15803d] text-[#ffffff] p-6 rounded-2xl shadow-xl z-20 hidden lg:block">
-                  <p className="text-3xl font-bold">15+</p>
+                  <p className="text-3xl font-bold">20+</p>
                   <p className="text-base opacity-90">Years Experience</p>
                 </div>
               </div>
@@ -213,7 +222,7 @@ export default function Product() {
                   <td className="px-6 py-4 bg-[#f8fafc] text-base font-semibold text-[#475569]">
                     Year of Establishment
                   </td>
-                  <td className="px-6 py-4 text-base text-[#475569]">2012</td>
+                  <td className="px-6 py-4 text-base text-[#475569]">2004</td>
                 </tr>
               </tbody>
             </table>

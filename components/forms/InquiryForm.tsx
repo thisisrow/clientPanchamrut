@@ -111,7 +111,7 @@ export default function InquiryForm({
           </label>
           <input
             className="w-full px-4 py-3 text-[#15803d] rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#15803d] focus:border-transparent outline-none transition-all"
-            placeholder="John Doe"
+            placeholder="Jagah Malkesh Doshi"
             type="text"
             required
             value={form.fullName}
@@ -124,7 +124,7 @@ export default function InquiryForm({
           </label>
           <input
             className="w-full text-[#15803d] px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#15803d] focus:border-transparent outline-none transition-all"
-            placeholder="john@company.com"
+            placeholder="info@panchamrut.com"
             type="email"
             value={form.email}
             onChange={onChange("email")}

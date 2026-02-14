@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200 pt-16 pb-8">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <div className="">
@@ -127,29 +127,27 @@ export default function Footer() {
                 <span>
                   203, Gangotri Apartment,
                   <br />
-                  Shimpoli Road, Haridas Nagar,
+                  Shimpoli Rd, Kandivali, Haridas Nagar,
                   <br />
-                  Borivali West, Mumbai - 400092
+                  Borivali West, Mumbai, Maharashtra 400092
                 </span>
               </div>
-              <div className="flex gap-3">
+              <div className="flex gap-3 items-start">
                 <span className="material-symbols-outlined text-[#15803d]">
                   call
                 </span>
-                <span>+91 98707 95121</span>
+
+                <div className="flex flex-col">
+                  <a href="tel:+919870795121" className="hover:underline">
+                    +91 98707 95121
+                  </a>
+
+                  <a href="tel:+919825242122" className="hover:underline">
+                    +91 98252 42122
+                  </a>
+                </div>
               </div>
             </address>
-          </div>
-        </div>
-        <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-base text-slate-500">
-          <p>© 2024 Panchamrut Chemicals Pvt Ltd. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a className="hover:text-[#15803d] transition-colors" href="#">
-              Privacy Policy
-            </a>
-            <a className="hover:text-[#15803d] transition-colors" href="#">
-              Terms of Service
-            </a>
           </div>
         </div>
       </div>

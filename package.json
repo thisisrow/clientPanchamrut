@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "framer-motion": "^12.34.0",
     "material-symbols": "^0.40.2",
     "mongoose": "^9.1.6",
     "next": "16.1.6",

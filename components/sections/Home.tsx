@@ -29,7 +29,7 @@ export default function Home() {
             <p className="text-xl text-slate-200 mb-8 max-w-lg leading-relaxed">
               Leading Mumbai-based industrial chemical supplier delivering
               quality and consistency across various industry sectors for over
-              20 years.
+              20+ years.
             </p>
             <div className="flex flex-wrap gap-4 mb-[10%] md:mb-0">
               <a
@@ -140,9 +140,9 @@ export default function Home() {
                 diverse industrial end-users.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Our legacy of 20 years is built on transparency, quality
-                assurance, and an unwavering commitment to meeting the precise
-                requirements of our clients across India.
+                Our legacy of <strong>20+ years</strong> is built on
+                transparency, quality assurance, and an unwavering commitment to
+                meeting the precise requirements of our clients across India.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-center gap-3">

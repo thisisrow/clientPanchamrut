@@ -48,17 +48,32 @@ export default function Contact() {
 
               <div className="flex gap-5 group">
                 <div className="size-12 bg-[#22c55e]/10 text-[#15803d] flex items-center justify-center flex-shrink-0 group-hover:bg-[#15803d] group-hover:text-[#ffffff] transition-all rounded-lg">
-                  <span className="material-symbols-outlined">location_on</span>
+                  <a
+                    href="https://maps.app.goo.gl/95e8F3qb3opYnmy37"
+                    target="_blank"
+                  >
+                    <span className="material-symbols-outlined">
+                      location_on
+                    </span>
+                  </a>
                 </div>
                 <div>
                   <h4 className="font-bold text-base uppercase tracking-wider text-[#0f172a] mb-1">
                     Our Location
                   </h4>
-                  <p className="text-[#475569] leading-relaxed">
-                    405, Industry House, MG Road,
-                    <br />
-                    Mumbai, Maharashtra 400001, India
-                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/95e8F3qb3opYnmy37"
+                    target="_blank"
+                    className="text-[#475569] leading-relaxed"
+                  >
+                    <span>
+                      203, Gangotri Apartment,
+                      <br />
+                      Shimpoli Rd, Kandivali, Haridas Nagar,
+                      <br />
+                      Borivali West, Mumbai, Maharashtra 400092
+                    </span>
+                  </a>
                 </div>
               </div>
 
@@ -66,12 +81,21 @@ export default function Contact() {
                 <div className="size-12 bg-[#22c55e]/10 text-[#15803d] flex items-center justify-center flex-shrink-0 group-hover:bg-[#15803d] group-hover:text-[#ffffff] transition-all rounded-lg">
                   <span className="material-symbols-outlined">call</span>
                 </div>
+
                 <div>
                   <h4 className="font-bold text-base uppercase tracking-wider text-[#0f172a] mb-1">
                     Call Us
                   </h4>
-                  <p className="text-[#475569] font-medium">+91 22 1234 5678</p>
-                  <p className="text-[#475569]">+91 98765 43210</p>
+
+                  <div className="flex flex-col text-[#475569] font-medium space-y-1">
+                    <a href="tel:+919870795121" className="hover:underline">
+                      +91 98707 95121
+                    </a>
+
+                    <a href="tel:+919825242122" className="hover:underline">
+                      +91 98252 42122
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -83,12 +107,19 @@ export default function Contact() {
                   <h4 className="font-bold text-base uppercase tracking-wider text-[#0f172a] mb-1">
                     Email Us
                   </h4>
-                  <p className="text-[#475569] font-medium">
+                  <a
+                    href="mailto:info@panchamrutchemicals.com?subject=Product Inquiry&body=Hi,%20I%20want%20to%20get%20in%20touch%20with%20you%20for%20product%20inquiry.%20Please%20call%20me."
+                    className="text-[#475569] font-medium hover:underline"
+                  >
                     info@panchamrutchemicals.com
-                  </p>
-                  <p className="text-[#475569]">
+                  </a>
+                  <br />
+                  <a
+                    href="mailto:sales@panchamrutchemicals.com?subject=Product Inquiry&body=Hi,%20I%20want%20to%20get%20in%20touch%20with%20you%20for%20product%20inquiry.%20Please%20call%20me."
+                    className="text-[#475569] hover:underline"
+                  >
                     sales@panchamrutchemicals.com
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
