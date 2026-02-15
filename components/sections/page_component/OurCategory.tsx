@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getCategories, getProducts } from "@/components/catalog/data";
 
-export default async function OurCatagory() {
+export default async function OurCategory() {
   const [categories, products] = await Promise.all([
     getCategories(),
     getProducts(),
@@ -36,7 +36,7 @@ export default async function OurCatagory() {
           </div>
           <Link
             className="text-[#15803d] font-semibold flex items-center gap-2 hover:gap-4 transition-all"
-            href="/catagory"
+            href="/category"
           >
             View Full Catalog{" "}
             <span className="material-symbols-outlined">arrow_forward</span>

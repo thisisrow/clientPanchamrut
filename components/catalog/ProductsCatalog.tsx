@@ -25,7 +25,7 @@ export default async function ProductsCatalog({
         <div className="container mx-auto px-4 lg:px-8">
           <div data-aos="fade-right" className="flex flex-col gap-4">
             <Link
-              href="/catagory"
+              href="/category"
               className="inline-flex items-center gap-2 text-base font-semibold text-[#15803d] hover:text-[#166534]"
             >
               <span className="material-symbols-outlined text-base">

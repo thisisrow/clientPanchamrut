@@ -1,4 +1,4 @@
-import OurCatagory from "./page_component/OurCatagory";
+import OurCategory from "./page_component/OurCategory";
 import Formcta from "./page_component/Formcta";
 import { openLearnMorePopup } from "@/components/forms/LearnMorePopup";
 import Image from "next/image";
@@ -36,7 +36,7 @@ export default function Home() {
               <a
                 data-aos="fade-up"
                 className="bg-[#15803d] hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center gap-2"
-                href="/catagory"
+                href="/category"
               >
                 Explore Categories
                 <span className="material-symbols-outlined">arrow_forward</span>
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <OurCatagory />
+      <OurCategory />
       <Formcta />
     </main>
   );
