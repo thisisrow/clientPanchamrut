@@ -1,15 +1,17 @@
 import InquiryForm from "@/components/forms/InquiryForm";
-
+import Image from "next/image";
 //bg-contactimg
 export default function Contact() {
   return (
     <>
       <section className="relative min-h-[50vh] overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             alt="Chemical Research Laboratory"
             className="w-full h-full object-cover opacity-20"
             src="/contactUs.png"
+            fill
+            sizes="100vw"
           />
         </div>
 
@@ -66,13 +68,11 @@ export default function Contact() {
                     target="_blank"
                     className="text-[#475569] leading-relaxed"
                   >
-                    <span>
-                      203, Gangotri Apartment,
-                      <br />
-                      Shimpoli Rd, Kandivali, Haridas Nagar,
-                      <br />
-                      Borivali West, Mumbai, Maharashtra 400092
-                    </span>
+                    Shop No. 6, Shiv Darshan,
+                    <br />
+                    Satya Nagar Rd, Kandivali, Satya Nagar,
+                    <br />
+                    Borivali West, Mumbai, Maharashtra 400092
                   </a>
                 </div>
               </div>

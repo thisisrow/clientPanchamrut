@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import {
   Category,
   formatPrice,
@@ -11,6 +11,7 @@ import {
 } from "./data";
 import RelatedProducts from "./RelatedProducts";
 import { openQuotePopup } from "@/components/forms/QuotePopup";
+import ImageLightbox from "@/components/ui/ImageLightbox";
 type ProductDetailProps = {
   product: Product;
   category?: Category;
@@ -26,8 +27,19 @@ export default function ProductDetail({
     const images = [product.image, ...product.gallery].filter(Boolean);
     return Array.from(new Set(images));
   }, [product.image, product.gallery]);
-  const [activeImage, setActiveImage] = useState(gallery[0] ?? product.image);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [shareMessage, setShareMessage] = useState<string>("");
+  const activeImage = gallery[activeIndex] ?? product.image;
+
+  const goNext = useCallback(() => {
+    setActiveIndex((prev) => (prev + 1) % gallery.length);
+  }, [gallery.length]);
+
+  const goPrev = useCallback(() => {
+    setActiveIndex((prev) => (prev - 1 + gallery.length) % gallery.length);
+  }, [gallery.length]);
+
 
   const stockLabel =
     product.stockStatus === "Available"
@@ -70,7 +82,36 @@ export default function ProductDetail({
 
           <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.15fr]">
             <div className="space-y-6">
-              <div className="relative overflow-hidden rounded-3xl border border-[#e2e8f0] bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.35)]">
+              <div
+                className="relative overflow-hidden rounded-3xl border border-[#e2e8f0] bg-white shadow-[0_24px_60px_-40px_rgba(15,23,42,0.35)]"
+                onClick={() => setIsZoomOpen(true)}
+              >
+                <button
+                  type="button"
+                  className="absolute left-3 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-[#16a34a] text-white shadow-lg hover:scale-[1.3]"
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    goPrev();
+                  }}
+                  aria-label="Previous image"
+                >
+                  <span className="material-symbols-outlined text-base ">
+                    chevron_left
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="absolute right-3 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-[#16a34a] text-white shadow-lg hover:scale-[1.3]"
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    goNext();
+                  }}
+                  aria-label="Next image"
+                >
+                  <span className="material-symbols-outlined text-base ">
+                    chevron_right
+                  </span>
+                </button>
                 <img
                   alt={product.name}
                   src={activeImage}
@@ -116,12 +157,12 @@ export default function ProductDetail({
 
               <div className="grid grid-cols-4 gap-3">
                 {gallery.map((image, index) => {
-                  const isActive = image === activeImage;
+                  const isActive = index === activeIndex;
                   return (
                     <button
                       key={`${product.slug}-gallery-${index}`}
                       type="button"
-                      onClick={() => setActiveImage(image)}
+                      onClick={() => setActiveIndex(index)}
                       className={`overflow-hidden rounded-2xl border bg-white transition-all ${
                         isActive
                           ? "border-[#15803d] ring-2 ring-[#15803d]/30"
@@ -230,6 +271,15 @@ export default function ProductDetail({
           </div>
         </div>
       </section>
+
+      <ImageLightbox
+        images={gallery}
+        activeIndex={activeIndex}
+        isOpen={isZoomOpen}
+        onClose={() => setIsZoomOpen(false)}
+        onChange={setActiveIndex}
+        alt={product.name}
+      />
 
       <section className="border-t border-[#e2e8f0] bg-white py-16">
         <div className="container mx-auto px-4 lg:px-8">

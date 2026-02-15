@@ -1,6 +1,7 @@
 import OurCatagory from "./page_component/OurCatagory";
 import Formcta from "./page_component/Formcta";
 import { openLearnMorePopup } from "@/components/forms/LearnMorePopup";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -135,10 +136,12 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div data-aos="fade-right" className="lg:w-1/2 relative">
               <div className="absolute -top-12 -left-12 w-64 h-64 bg-green-100 rounded-full blur-3xl -z-10"></div>
-              <img
+              <Image
                 alt="Scientist in lab"
-                className="rounded-3xl shadow-2xl relative z-10 w-full"
+                className="rounded-3xl shadow-2xl relative z-10 w-full h-auto"
                 src="/sciencelab.png"
+                width={900}
+                height={700}
               />
               <div
                 data-aos="flip-left"

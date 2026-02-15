@@ -5,6 +5,7 @@ import { Inter, Outfit } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SubFooter from "@/components/SubFooter";
+import FloatingContact from "@/components/FloatingContact";
 import BackToTop from "@/components/BackToTop";
 import QuotePopup from "@/components/forms/QuotePopup";
 import LearnMorePopup from "@/components/forms/LearnMorePopup";
@@ -85,6 +86,7 @@ export default function RootLayout({
           <div className="pt-24">{children}</div>
           <Footer />
           <SubFooter />
+          <FloatingContact/>
           <QuotePopup />
           <LearnMorePopup />
           <BackToTop />

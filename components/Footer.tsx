@@ -136,13 +136,13 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-[#15803d]">
                   location_on
                 </span>
-                <span>
-                  203, Gangotri Apartment,
+                <a href="https://maps.app.goo.gl/vLzS8Pv7wdngQr9X9" target="_blank">
+                  Shop No. 6, Shiv Darshan,
                   <br />
-                  Shimpoli Rd, Kandivali, Haridas Nagar,
+                  Satya Nagar Rd, Kandivali, Satya Nagar,
                   <br />
                   Borivali West, Mumbai, Maharashtra 400092
-                </span>
+                </a>
               </div>
               <div className="flex gap-3 items-start">
                 <span className="material-symbols-outlined text-[#15803d]">

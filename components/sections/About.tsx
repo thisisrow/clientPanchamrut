@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Product() {
   const profileData = [
     { label: "Legal Name", value: "Panchamrut Chemicals Pvt. Ltd." },
@@ -14,10 +15,12 @@ export default function Product() {
     <main>
       <section className="relative py-20 min-h-[50vh] overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             alt="Chemical Research Laboratory"
             className="w-full h-full object-cover opacity-20"
             src="/aboutus.png"
+            fill
+            sizes="100vw"
           />
         </div>
 
@@ -75,10 +78,12 @@ export default function Product() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#22c55e]/10 rounded-full blur-2xl"></div>
 
-                <img
+                <Image
                   alt="Our Warehouse Facility"
                   className="rounded-2xl shadow-2xl relative z-10 border-4 border-[#ffffff]"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIXOSNH2LYQnGuH6zil3yFAANqZOyKdzJv1UDIAHNGd2mVFRHMYqtJIyYnLmEJZ2I3qat_pVmeAbp1XWjdu0EUAxT-h4MVqmttvlEMIo-Sbr2VHnjDWKEwKn23sc0auTaTeU16YGV-ATNYi6y6Rxv665FCSiW1aljKmxlwZg6W7JwPfMZHBNfbf0Fep4TRKfBjL-YjwrrL5kcThmmMvWPDNky3qhAv91uL6OJQ1OyZTbFxZj_88pgHYZxX37WEMoZb3LD4pgydaAo"
+                  width={900}
+                  height={700}
                 />
 
                 <div

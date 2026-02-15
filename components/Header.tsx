@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { openLearnMorePopup } from "@/components/forms/LearnMorePopup";
 
 export default function Header() {
   const pathname = usePathname();
@@ -42,7 +43,7 @@ export default function Header() {
   ];
 
   return (
-    <header data-aos="fade-down"
+    <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       } ${
@@ -88,12 +89,13 @@ export default function Header() {
 
           {/* Action Button */}
           <div className="flex items-center gap-4">
-            <Link
-              href="/contact"
+            <button
+              onClick={openLearnMorePopup}
+              type="button"
               className="hidden md:block bg-[#15803d] text-base md:text-xl text-white px-6 py-2 rounded-full font-medium hover:bg-[#16a34a] transform hover:scale-105 transition-all active:scale-95"
             >
               Enquire Now
-            </Link>
+            </button>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}

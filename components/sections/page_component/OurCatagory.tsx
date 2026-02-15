@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getCategories, getProducts } from "@/components/catalog/data";
 
 export default async function OurCatagory() {
@@ -49,9 +50,11 @@ export default async function OurCatagory() {
             >
               <div className="h-64 overflow-hidden relative">
                 <Link href={`/products?category=${category.slug}`}>
-                  <img
+                  <Image
                     alt={category.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     src={category.image}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>

@@ -34,14 +34,17 @@ export default function LearnMorePopup() {
     return null;
   }
 
+  const closePopup = () => setOpen(false);
+
   return createPortal(
     open ? (
       <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 px-4">
         <div className="relative w-full max-w-2xl rounded-3xl bg-white p-6 shadow-2xl">
           <button
+            data-aos="zoom-in"
             type="button"
-            className="absolute right-4 top-4 rounded-full border border-slate-200 bg-white p-2 text-slate-500 hover:text-slate-900"
-            onClick={() => setOpen(false)}
+            className="absolute right-3 top-3 w-9 h-9 flex items-center justify-center rounded-full bg-[#15803d] text-white shadow-md"
+            onClick={closePopup}
             aria-label="Close"
           >
             <span className="material-symbols-outlined text-base">close</span>
@@ -57,7 +60,11 @@ export default function LearnMorePopup() {
               Share your requirement and we will get back to you shortly.
             </p>
           </div>
-          <InquiryForm source="learn-more" submitLabel="Send Request" />
+          <InquiryForm
+            source="learn-more"
+            submitLabel="Send Request"
+            onSubmitted={closePopup}
+          />
         </div>
       </div>
     ) : null,

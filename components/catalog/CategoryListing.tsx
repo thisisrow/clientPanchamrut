@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getCategories, getProducts } from "./data";
 
 export default async function CategoryListing() {
@@ -69,10 +70,12 @@ export default async function CategoryListing() {
               >
                 <div className="relative h-56 overflow-hidden">
                   <Link href={`/products?category=${category.slug}`}>
-                    <img
+                    <Image
                       src={category.image?.trim() || "/logo.png"}
                       alt={category.name}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/60 via-[#020617]/20 to-transparent" />
                   </Link>

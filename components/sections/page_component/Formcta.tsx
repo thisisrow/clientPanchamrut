@@ -40,8 +40,8 @@ export default async function Formcta() {
                     </div>
 
                     <div>
-                      <p className="text-base text-white">Phone Support</p>
-                      <p className="text-xl md:text-2xl font-bold tracking-wide">
+                      <p className="text-lg text-white">Phone Support</p>
+                      <p className="text-base md:text-xl font-bold tracking-wide">
                         <a href="tel:+919870795121" className="hover:underline">
                           +91 98707 95121
                         </a>
@@ -69,8 +69,8 @@ export default async function Formcta() {
                     </div>
 
                     <div>
-                      <p className="text-base text-white">Email Support</p>
-                      <p className="text-xl md:text-2xl font-bold tracking-wide space-x-2">
+                      <p className="text-lg text-white">Email Support</p>
+                      <p className="text-base md:text-xl  font-bold tracking-wide space-x-2">
                         <a
                           href="mailto:info@panchamrut.com?subject=Product Inquiry&body=Hi,%20I%20want%20to%20get%20in%20touch%20with%20you%20for%20product%20inquiry.%20Please%20call%20me%20on%20this%20number."
                           className="hover:underline"
