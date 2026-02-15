@@ -12,7 +12,7 @@ export default function SubFooter() {
           </a>
         </p>
         <p className="text-center md:text-right">
-          Developed and Managed by Web Presence Co{" "}
+          Developed and Managed by The Web Presence{" "}
           <a
             className="hover:text-[#15803d] transition-colors"
             href="mailto:workwithdarshannn@gmail.com"
