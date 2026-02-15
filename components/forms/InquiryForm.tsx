@@ -111,7 +111,7 @@ export default function InquiryForm({
           </label>
           <input
             className="w-full px-4 py-3 text-[#15803d] rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#15803d] focus:border-transparent outline-none transition-all"
-            placeholder="Jagah Malkesh Doshi"
+            placeholder="Malkesh Doshi"
             type="text"
             required
             value={form.fullName}
